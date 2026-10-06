@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="OTOP Calbayog Pasalubong Center - discover and support locally made products."
+    />
+    <title>OTOP Calbayog Pasalubong Center</title>
+    <link rel="stylesheet" href="styles.css?v=20261005-1" />
+  </head>
+  <body>
+    <div id="toast" class="toast" role="status"></div>
+    <header class="site-header">
+      <div class="topbar">
+        <span>Made locally. Calbayog Pride.</span
+        ><span>Discover local favorites. Support our makers.</span>
+      </div>
+      <div class="nav-wrap">
+        <a class="brand" href="#home" aria-label="OTOP home"
+          ><span class="brand-mark"><img src="OTOP%20PH.png" alt="" /></span
+          ><span><b>OTOP</b><small>CALBAYOG PASALUBONG CENTER</small></span></a
+        >
+        <button
+          id="menu-toggle"
+          class="icon-btn menu-toggle"
+          aria-label="Open menu"
+        >
+          ☰
+        </button>
+        <nav id="main-nav">
+          <a href="#home">Home</a><a href="#products">Products</a
+          ><a href="#categories">Categories</a><a href="#about">About OTOP</a
+          ><a href="#how-to-order">How to Order</a
+          ><a href="#contact">Contact</a>
+        </nav>
+        <button
+          id="auth-button"
+          class="auth-button"
+          aria-label="Log in or register"
+        >
+          Log in
+        </button>
+        <button id="cart-button" class="cart-button" aria-label="Open cart">
+          🛒 <span>Cart</span><b id="cart-count">0</b>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section
+        id="home"
+        class="hero hero-banner"
+        aria-label="Calbayog Pasalubong Center"
+      >
+        <img
+          src="otop%20banner.jpg"
+          alt="Calbayog Pasalubong Center, One Town One Product, Goleta Street, Barangay Central, Calbayog City"
+        />
+      </section>
+
+      <section id="products" class="section catalog-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">FROM OUR COMMUNITY</p>
+            <h2>Featured products</h2>
+          </div>
+        </div>
+        <div class="toolbar">
+          <label class="search-box"
+            >⌕<input
+              id="search-input"
+              type="search"
+              placeholder="Search products, categories, producers..." /></label
+          ><select id="category-filter" aria-label="Filter by category">
+            <option value="all">All categories</option></select
+          ><select id="sort-select" aria-label="Sort products">
+            <option value="featured">Featured first</option>
+            <option value="newest">Newest</option>
+            <option value="low">Price: low to high</option>
+            <option value="high">Price: high to low</option>
+          </select>
+        </div>
+        <div id="product-grid" class="product-grid"></div>
+        <a class="text-link catalog-view-all" href="#products"
+          >View all products →</a
+        >
+        <p id="empty-products" class="empty-state" hidden>
+          No products match your search. Try a different filter.
+        </p>
+      </section>
+
+      <section id="categories" class="section categories-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SHOP BY COLLECTION</p>
+            <h2>Made here, loved everywhere</h2>
+          </div>
+        </div>
+        <div id="category-grid" class="category-grid"></div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="about-art">
+          <span>🌿</span><span>🥥</span><span>🍫</span>
+        </div>
+        <div>
+          <p class="eyebrow">ABOUT OTOP CALBAYOG</p>
+          <h2>One marketplace.<br /><em>Many local stories.</em></h2>
+          <p>
+            OTOP Calbayog Pasalubong Center is an online avenue for local
+            producers, entrepreneurs, artisans, and MSMEs to showcase their
+            products and connect with customers.
+          </p>
+          <p class="muted">
+            This prototype uses sample product information while official
+            branding, producer profiles, and contact details are being prepared.
+          </p>
+          <a class="btn btn-dark" href="#contact"
+            >Get in touch <span>→</span></a
+          >
+        </div>
+      </section>
+
+      <section id="how-to-order" class="section steps-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SIMPLE AND SECURE</p>
+            <h2>How to order</h2>
+          </div>
+        </div>
+        <div class="steps">
+          <div>
+            <b>01</b>
+            <h3>Browse</h3>
+            <p>Explore local products and find something special.</p>
+          </div>
+          <div>
+            <b>02</b>
+            <h3>Add to cart</h3>
+            <p>Choose your quantity and review your order.</p>
+          </div>
+          <div>
+            <b>03</b>
+            <h3>Checkout</h3>
+            <p>Tell us where to deliver or select store pickup.</p>
+          </div>
+          <div>
+            <b>04</b>
+            <h3>Enjoy local</h3>
+            <p>Track your order and enjoy your Calbayog finds.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div>
+          <p class="eyebrow">WE’D LOVE TO HEAR FROM YOU</p>
+          <h2>Let’s connect.</h2>
+          <p>
+            Have a question about a product or want to join our local
+            marketplace?
+          </p>
+          <div class="contact-details">
+            <p>📍 Goleta St., Brgy. Central, Calbayog City Samar</p>
+            <p>📞 <a href="tel:+639978843842">+63 997 884 3842</a></p>
+            <p>✉ <a href="mailto:pasalubongcenter75@gmail.com">pasalubongcenter75@gmail.com</a></p>
+            <p>◷ Mon–Sat · 8:00 AM–5:00 PM</p>
+          </div>
+          <a
+            class="facebook-link"
+            href="https://www.facebook.com/OTPPasalubongCenter"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit OTOP Calbayog Pasalubong Center on Facebook"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                d="M13.5 21v-8.2h2.8l.4-3.2h-3.2v-2c0-.9.3-1.6 1.6-1.6h1.7V3.1c-.8-.1-1.7-.2-2.5-.2-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3v3.2h2.8V21h3.4Z"
+              />
+            </svg>
+            <span>Follow us on Facebook</span>
+          </a>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <label>Name<input name="name" required /></label
+          ><label>Email<input type="email" name="email" required /></label
+          ><label
+            >Message<textarea
+              name="message"
+              rows="4"
+              required
+            ></textarea></label
+          ><button class="btn btn-primary" type="submit">
+            Send message <span>→</span>
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-brand">
+        <span class="brand-mark"><img src="OTOP%20PH.png" alt="" /></span>
+        <div>
+          <b>OTOP CALBAYOG</b><small>DISCOVER. SUPPORT. BUY LOCAL.</small>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#products">Products</a><a href="#about">About</a
+        ><a href="#contact">Contact</a>
+      </div>
+      <p>© 2026 OTOP Calbayog Pasalubong Center</p>
+    </footer>
+
+    <aside id="cart-drawer" class="drawer" aria-label="Shopping cart">
+      <div class="drawer-head">
+        <div>
+          <p class="eyebrow">YOUR ORDER</p>
+          <h2>Shopping cart</h2>
+        </div>
+        <button id="close-cart" class="icon-btn" aria-label="Close cart">
+          ×
+        </button>
+      </div>
+      <div id="cart-items" class="cart-items"></div>
+      <div id="cart-summary" class="cart-summary"></div>
+    </aside>
+    <div id="overlay" class="overlay"></div>
+    <div id="product-modal" class="modal-wrap" aria-hidden="true">
+      <div class="modal">
+        <button class="modal-close icon-btn" data-close-modal>×</button>
+        <div id="product-modal-content"></div>
+      </div>
+    </div>
+    <div id="checkout-modal" class="modal-wrap" aria-hidden="true">
+      <div class="modal checkout-modal">
+        <button class="modal-close icon-btn" data-close-modal>×</button>
+        <div id="checkout-content"></div>
+      </div>
+    </div>
+    <div id="admin-modal" class="modal-wrap" aria-hidden="true">
+      <div class="modal admin-modal">
+        <button class="modal-close icon-btn" data-close-modal>×</button>
+        <div id="admin-content"></div>
+      </div>
+    </div>
+    <div id="auth-modal" class="modal-wrap" aria-hidden="true">
+      <div class="modal auth-modal">
+        <button class="modal-close icon-btn" data-close-modal>×</button>
+        <div id="auth-content"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="app.js?v=20261005-7"></script>
+  </body>
+</html>
